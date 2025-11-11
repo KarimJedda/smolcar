@@ -1,0 +1,16 @@
+[package]
+name = "smolcarnext"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+subxt = { version = "0.38", features = ["substrate-compat", "unstable-light-client"] }
+subxt-signer = "0.38"
+tokio = { version = "1", features = ["full"] }
+tracing-subscriber = "0.3"
+ed25519-zebra = { version = "4.0.3", features = ["alloc"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.32", features = ["bundled"] }
+chrono = "0.4"
